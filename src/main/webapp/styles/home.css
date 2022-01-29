@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-bar-area > nav {
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-bar-area ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar-area li {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.nav-account {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-account i {
+  margin-right: 10px;
+}
+
+/* Slides */
+.content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider .slider-inner {
+  display: flex;
+  width: 100%;
+  transition: all 2s;
+}
+
+.slider .slide {
+  flex: none;
+  width: 100%;
+}
+
+.slider .indicators {
+  display: flex;
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  z-index: 1;
+}
+
+.slider .indicators .indicator {
+  margin: 0px 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slider .indicators .indicator[active] {
+  width: 15px;
+  opacity: 1;
+}
+
+.slider .arrows {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider .arrows .arrow-prev,
+.slider .arrows .arrow-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slider .arrows .arrow-prev:hover,
+.slider .arrows .arrow-next:hover {
+  opacity: 0.8;
+}
+
+.slider .arrows .arrow-prev {
+  left: 50px;
+}
+
+.slider .arrows .arrow-next {
+  right: 50px;
+}
+
+.slider .arrows .arrow-prev .fas,
+.slider .arrows .arrow-next .fas {
+  color: #4b4b4b;
+  opacity: 0.5;
+}
+
+video{
+	object-fit: fill;
+	height: 100%;
+	width: 100%;
+}
+
+
+.page-container {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  padding: 0 100px;
+  padding-bottom: 60px;
+}
+
+.games-area {
+  color: white;
+}
+
+.games-area-headline {
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 40px;
+}
+
+.game-card {
+  width: 450px;
+  font-family: "Nunito", sans-serif;
+}
+
+.game-card h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.game-card-image {
+  max-width: 450px;
+  height: 300px;
+}
+
+.game-card-image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-card button {
+  background: #0076e3;
+  width: 140px;
+  height: 28px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.game-card-area {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 40px;
+  align-content: center;
+  justify-content: center;
+  column-gap: 5rem;
+  row-gap: 60px;
+}
+
+.gameinner-page-content {
+  height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 30px 60px;
+}
+
+.gameinner-details {
+  width: 50%;
+}
+
+/* .game-detail-image {
+} */
+
+.game-detail-image > img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.game-subscribe-area {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-inner-headline {
+  font-family: "Ubuntu", sans-serif;
+  margin: 30px 0;
+}
+
+.desc {
+  font-family: "Nunito", sans-serif;
+  margin: 30px 0;
+}
+
+.buttons-area {
+  margin-top: 30%;
+}
+
+.buttons-area button {
+  width: 350px;
+  height: 50px;
+  background: #0076e3;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.specs-area {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.spec {
+  margin-top: 8px;
+}
+
+.wish-icon{
+	margin-left: 10px;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #363636;
+  text-align: center;
+  color: #f4f4f4;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  padding-top: 1rem;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+}
+
+.company-name {
+  font-size: 16px;
+  margin-top: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}

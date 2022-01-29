@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+h1 {
+  font-family: "Nunito";
+  color: white;
+  margin-bottom: 35px;
+}
+
+.nav-bar-area > nav {
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-bar-area ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar-area li {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.nav-account {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-account i {
+  margin-right: 10px;
+}
+
+.page-container {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.form-container {
+  width: 60%;
+  min-height: 70%;
+  background: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.form-container input {
+  width: 450px;
+  height: 20px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  color: white;
+}
+
+.form-container textarea {
+  width: 450px;
+  height: 50px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  color: white;
+}
+
+.form-container textarea::placeholder {
+  color: white;
+  font-size: 14px;
+}
+
+.form-container input::placeholder {
+  color: white;
+}
+
+.form-container button {
+  width: 200px;
+  height: 40px;
+  background-color: #0076e3;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.error-msg {
+	color: red;
+	font-size: 15px;
+	margin: 10px 0;
+}
+
+.admin-btns > button {
+  margin: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #363636;
+  text-align: center;
+  color: #f4f4f4;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  padding-top: 1rem;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+}
+
+.company-name {
+  font-size: 16px;
+  margin-top: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
